@@ -1,0 +1,7 @@
+PyYAML
+pandas
+streamlit
+streamlit-authenticator
+reportlab
+plotly
+matplotlib
