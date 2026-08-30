@@ -1,0 +1,29 @@
+cookie:
+  expiry_days: 30
+  key: zaintech_super_secret_key_2026
+  name: zaintech_auth_cookie
+credentials:
+  usernames:
+    admin_user:
+      email: admin@zaintech.com
+      name: Admin System
+      password: $2b$12$vujF3XWC/CfqGf.GG72DwOV4BAzvhTZW5ZewxrEWN2Qe6BuS/Yh7C
+      role: Admin
+    jan:
+      email: zainpatel1312@gmail.com
+      first_name: jano
+      last_name: bhai
+      logged_in: false
+      password: $2b$12$xEHeg2E.ER9.qM.pEtD37.giLUHeptCK6HghJmHb6.5wL43VGxjtu
+      password_hint: Za
+      role: Analyst
+      roles: null
+    zain:
+      email: zainpatel1213@gmail.com
+      first_name: Muhammad  Zain
+      last_name: Ul Abadeen
+      logged_in: false
+      password: $2b$12$Lt2BHNb.7L0M/9Hty/8RNuX8lNXR.m0RRupwzB7S/59C0j536AaE2
+      password_hint: 098
+      role: Analyst
+      roles: null
