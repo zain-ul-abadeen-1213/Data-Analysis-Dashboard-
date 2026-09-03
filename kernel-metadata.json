@@ -1,0 +1,11 @@
+{
+  "id": "mzain234/data-analysis-dashboard",
+  "title": "Data Analysis Dashboard",
+  "code_file": "dashboard.ipynb", 
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "true"
+}
