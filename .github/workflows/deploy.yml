@@ -15,13 +15,9 @@ jobs:
         run: pip install kaggle
       - name: Auth & Push
         env:
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_SECRET: ${{ secrets.KAGGLE_KEY }}
         run: |
           mkdir -p ~/.kaggle
-          echo "$KAGGLE_KEY" > ~/.kaggle/access_token
-          chmod 600 ~/.kaggle/access_token
-          export KAGGLE_API_TOKEN="$KAGGLE_KEY"
-          # یہ نئی لائنز کیگل کی نئی اے پی آئی کو بائی پاس کریں گی
-          export KAGGLE_CONFIG_DIR=~/.kaggle
+          echo "$KAGGLE_SECRET" > ~/.kaggle/kaggle.json
+          chmod 600 ~/.kaggle/kaggle.json
           kaggle kernels push -p .
