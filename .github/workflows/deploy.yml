@@ -22,4 +22,6 @@ jobs:
           echo "$KAGGLE_KEY" > ~/.kaggle/access_token
           chmod 600 ~/.kaggle/access_token
           export KAGGLE_API_TOKEN="$KAGGLE_KEY"
+          # یہ نئی لائنز کیگل کی نئی اے پی آئی کو بائی پاس کریں گی
+          export KAGGLE_CONFIG_DIR=~/.kaggle
           kaggle kernels push -p .
