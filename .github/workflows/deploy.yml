@@ -18,6 +18,9 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
-          # یہاں ہم ڈائریکٹ انوائرنمنٹ ویری ایبل سیٹ کر رہے ہیں
-          export KAGGLE_API_TOKEN="$KAGGLE_KEY"
+          mkdir -p ~/.kaggle
+          # یہاں ٹوکن کا نام "zain" سیٹ کر دیا ہے
+          echo "{\"username\":\"$KAGGLE_USERNAME\",\"key\":\"$KAGGLE_KEY\",\"token_name\":\"zain\"}" > ~/.kaggle/kaggle.json
+          chmod 600 ~/.kaggle/kaggle.json
+          export KAGGLE_CONFIG_DIR=~/.kaggle
           kaggle kernels push -p .
